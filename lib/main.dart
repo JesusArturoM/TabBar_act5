@@ -37,22 +37,22 @@ class _MyHomePageState extends State<MyHomePage> {
             indicatorSize: TabBarIndicatorSize.tab,
             indicatorWeight: 10,
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.coronavirus)),
+              Tab(icon: Icon(Icons.local_pizza)),
+              Tab(icon: Icon(Icons.add_call)),
               Tab(icon: Icon(Icons.account_circle)),
             ],
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent),
+                color: Color(0xff20583c)),
           ),
           title: const Text('Tabs Demo'),
         ),
         body: const TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.coronavirus, size: 350),
+            Icon(Icons.local_pizza, size: 350),
+            Icon(Icons.add_call, size: 350),
             Icon(Icons.account_circle, size: 350),
           ],
         ),
